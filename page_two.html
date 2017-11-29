@@ -7,7 +7,36 @@
 <meta name="description" content="A webpage for our final project in ICT390-001">
 <meta name="keywords" content="assignment, final, project">
 <meta name="author" content="Mason Clark, David Nealis">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- markup for Flex Slider Drupal module -->
+<script type="application/json-ld">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Flex Slider",
+  "creator":
+  {
+    "@type": "Person",
+    "name": "amaria"
+  },
+  "dateCreated": "2011/10/20",
+  "dateModified": "2017/04/12",
+  "softwareVersion": "7.x-2.0-rc2",
+  "audience":
+  {
+    "@type": "Audience",
+    "audienceType":
+    [
+      "Website Developers",
+      "Software Engineers"
+    ]
+  },
+  "sameAS": "https://www.drupal.org/project/flexslider"
+}
+</script>
+</script>
+
 </head>
 <body>
   <!-- This section will have the logo.-->
@@ -23,28 +52,36 @@
   <nav id="main">
     <ul class="list">
       <li><a href="index.html" title="Home" target="_self">Home</a></li>
-      <li><a href="page_two.html" title="Page_Two" target="_self">Page Two</a></li>
+      <li><a href="page_two.html" title="Tutorials" target="_self">Tutorials</a></li>
     </ul>
   </nav>
   <!-- Important/Main Content on website -->
   <article id="main_content">
-    <h2>New Article, Introduction, Slideshow, Time Sensitive Information</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae orci eros.
-       Vestibulum eget orci vestibulum neque imperdiet ultricies eu sit amet risus. In vitae orci dui.
-       Vestibulum ac nulla non diam sollicitudin maximus ut sit amet urna. Donec eget ultricies elit.
-       Aliquam id nulla feugiat, tempor turpis bibendum, auctor eros. Mauris eu cursus orci.
-       Sed molestie et velit at luctus. Aliquam ut mi tellus.
-       Donec nisi erat, lobortis sit amet lobortis quis, tincidunt eu magna.
-       <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo leo ut pulvinar sollicitudin.
-      Nullam pretium elit nisi, sit amet malesuada urna ultricies at. Integer libero est, tristique quis semper ut, ornare nec mi.
-      Donec viverra eros ut efficitur pretium. Sed id bibendum metus. Donec mattis nisi id vestibulum malesuada.
-      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Fusce mauris dolor, porta in est sit amet, egestas tristique tellus. Curabitur euismod maximus porttitor.
-      Nunc finibus felis sit amet nisi tincidunt semper. Sed et est ut augue dapibus pretium at id felis.
-      Phasellus vulputate, dolor vel porttitor congue, ligula nunc congue nulla, quis congue ex neque non ipsum.
-      Integer elementum mauris consequat mauris iaculis rutrum.
-
+    <h2>Modules Tutorial</h2>
+    <p>So, you've installed Drupal and have heard a lot about these 'modules' that are supposed to make Drupal so dandy.
+      Let's begin by installing a basic module. You can find modules at <a href="https://www.drupal.org/project/project_module" title="Drupal module site">Drupal's site</a>, or
+      really just by Googling <q>Drupal -module name-</q>. So, search around a bit, read through some basic modules, and
+      grab something you like by right clicking on the tar.gz link for your appropriate Drupal verison (Drupal 7 or Drupal 8, usually) at the end of the module's page and using <q>Copy Link Address</q>.
+      Then, on your Drupal site while logged in as the administrator, navigate to the the Modules tab and click <q>Install new module</q>.
+      Paste the link into the <q>Install from a URL</q> and clicking install. Then follow it up by enabling it from the list, and voila, it's
+      on your site.
+      <br></br>
+      That isn't the end though. Next, you need to navigate to the <q>Blocks</q> tab and select a block to place your shiny new module in.
+      For example, if you downloaded a Tetris game module, you might put it in one of the sidebars. Once that's done and you hit save, you'll see
+      the module on your webpage!
+    </p>
+    <h2>Flex Slider</h2>
+    <p>Now let's do something a little more complicated. Search for the Flex Slider module, and install it as described above.
+      However, this time we're not done yet. You'll need the libraries for Flex Slider to work. You'll need to use a file transfer software
+      and find the connection information for your website, including hostname, your admin username and password, and client. Connect via SFTP
+      and you'll see your website has files like <q>Code</q>, <q>Sites</q>, etc.
+      <br></br>
+      Now is when you need the libraries. On Flex Slider's webpage, go to the GitHub link and download the .zip file with the libraries in it.
+      Next, you'll need to use your file transfer software to move those libraries into the <q>libraries</q> file of your site. Once that's done,
+      rename the file <q>flexslider</q>.
+      <br></br>
+      And then that's it, you're done! You can now use Flex Slider to make carousels of images and other neat things. Some other modules also require
+      this sort of installation, so be sure to keep an eye out for the libraries when trying to get modules to work.
     </p>
   </article>
   <!-- Footer -->
@@ -60,7 +97,7 @@
             <a href="mailto:dane223@uky.edu">David Nealis</a>
           </address>
         </li>
-        <li><p id="time">Last modified: <time datetime="2017-11-25">Nov 25, 2017</time></p></li>
+        <li><p id="time">Last modified: <time datetime="2017-11-29">Nov 29, 2017</time></p></li>
       </ul>
     </nav>
   </footer>

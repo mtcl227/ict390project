@@ -7,7 +7,66 @@
 <meta name="description" content="A webpage for our final project in ICT390-001">
 <meta name="keywords" content="assignment, final, project">
 <meta name="author" content="Mason Clark, David Nealis">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- Drupal markup -->
+<script type="application/json-ld">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Drupal",
+  "creator":
+  {
+    "@type": "Person",
+    "givenName": "Dries",
+    "familyName": "Buytaert"
+  },
+  "dateCreated": "2000/05/18",
+  "dateModified": "2017/11/03",
+  "softwareVersion": "8.4.2",
+  "audience":
+  {
+    "@type": "Audience",
+    "audienceType":
+    [
+      "Website Developers",
+      "Software Engineers"
+    ]
+  },
+  "sameAS": "https://www.drupal.org/"
+}
+</script>
+
+<!-- Mason Clark markup -->
+<script type="application/json-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "givenName": "Mason",
+  "familyName": "Clark",
+  "affiliation":
+  {
+    "@type": "Organization",
+    "name": "University of Kentucky"
+  }
+}
+</script>
+
+<!-- David Nealis markup-->
+<script type="application/json-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "givenName": "David",
+  "familyName": "Nealis",
+  "affiliation":
+  {
+    "@type": "Organization",
+    "name": "University of Kentucky"
+  }
+}
+</script>
+
 </head>
 <body>
   <!-- This section will have the logo.-->
@@ -23,28 +82,23 @@
   <nav id="main">
     <ul class="list">
       <li><a href="index.html" title="Home" target="_self">Home</a></li>
-      <li><a href="page_two.html" title="Page_Two" target="_self">Page Two</a></li>
+      <li><a href="page_two.html" title="Tutorials" target="_self">Tutorials</a></li>
     </ul>
   </nav>
   <!-- Important/Main Content on website -->
   <article id="main_content">
-    <h2>New Article, Introduction, Slideshow, Time Sensitive Information</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae orci eros.
-       Vestibulum eget orci vestibulum neque imperdiet ultricies eu sit amet risus. In vitae orci dui.
-       Vestibulum ac nulla non diam sollicitudin maximus ut sit amet urna. Donec eget ultricies elit.
-       Aliquam id nulla feugiat, tempor turpis bibendum, auctor eros. Mauris eu cursus orci.
-       Sed molestie et velit at luctus. Aliquam ut mi tellus.
-       Donec nisi erat, lobortis sit amet lobortis quis, tincidunt eu magna.
-       <br><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo leo ut pulvinar sollicitudin.
-      Nullam pretium elit nisi, sit amet malesuada urna ultricies at. Integer libero est, tristique quis semper ut, ornare nec mi.
-      Donec viverra eros ut efficitur pretium. Sed id bibendum metus. Donec mattis nisi id vestibulum malesuada.
-      Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Fusce mauris dolor, porta in est sit amet, egestas tristique tellus. Curabitur euismod maximus porttitor.
-      Nunc finibus felis sit amet nisi tincidunt semper. Sed et est ut augue dapibus pretium at id felis.
-      Phasellus vulputate, dolor vel porttitor congue, ligula nunc congue nulla, quis congue ex neque non ipsum.
-      Integer elementum mauris consequat mauris iaculis rutrum.
-
+    <h2>Welcome</h2>
+    <p>Welcome to our website about Drupal, which is ironically not made with Drupal. Here we'll introduce just what Drupal is
+      as well as a tutorial on one of countless Drupal modules.
+      <br></br>
+      But what is Drupal? Well, Drupal is an open source framework for making websites. Instead on mucking about with HTML code,
+      you can muck about with various modules to customize your own site!
+      <br></br>
+      Okay, okay, but really: Drupal is a powerful tool that requires a different skillset to use than coding an HTML page. It
+      is more like using Legos to build a site, placing all the pieces just so, to create a respectable final product. For the truly
+      committed, you can use programming knowledge and the open source code of Drupal to write new modules. Writing modules is a bit
+      out of scope for us here, however. But let's get into an actual tutorial. If you'd be so kind as to head on over to our
+      <a href="page_two.html" title="Tutorials">Tutorials</a> page, we'll get started on installing a module.
     </p>
   </article>
   <!-- Footer -->
@@ -60,7 +114,7 @@
             <a href="mailto:dane223@uky.edu">David Nealis</a>
           </address>
         </li>
-        <li><p id="time">Last modified: <time datetime="2017-11-25">Nov 25, 2017</time></p></li>
+        <li><p id="time">Last modified: <time datetime="2017-11-29">Nov 29, 2017</time></p></li>
       </ul>
     </nav>
   </footer>
